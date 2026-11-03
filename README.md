@@ -1,6 +1,6 @@
 # EX01 Developing a Simple Webserver
 
-# Date:
+# Date:02/11/2026
 # AIM:
 To develop a simple webserver to serve html pages and display the configuration details of laptop.
 
@@ -21,6 +21,40 @@ Serving the HTML pages.
 Testing the webserver.
 
 # PROGRAM:
+#viwes.py
+~~~
+from django.shortcuts import render
+
+def home(request):
+    return render(request,'new.html')
+~~~
+#urls.py
+~~~
+from django.contrib import admin
+from django.urls import path
+from app import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',views.home)
+]
+~~~
+#new.Html
+~~~
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello!!!</h1>
+</body>
+</html>
+~~~
 # OUTPUT:
+![alt text](<EX 1.1.png>)
+
 # RESULT:
 The program for implementing simple webserver is executed successfully.
