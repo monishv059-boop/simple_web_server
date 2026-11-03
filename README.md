@@ -54,7 +54,8 @@ urlpatterns = [
 </html>
 ~~~
 # OUTPUT:
-![alt text](<EX 1.1.png>)
+
+![alt text](<EX 1.2.png>)
 
 # RESULT:
 The program for implementing simple webserver is executed successfully.
